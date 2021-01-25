@@ -24,3 +24,13 @@
 //solution
 let wordsToHex = words => words.split(' ').map(x=>[...x.slice(0,3)].map((i,j)=>x.charCodeAt(j)).map(v=>v.toString(16)).join('').padEnd(6,'0')).map(x=>'#'+x);
 
+
+//another solution
+function wordsToHex(words) {
+  return words.split(' ').map(w =>
+    '#' + [0, 1, 2].map(i =>
+      (w.charCodeAt(i) || '00').toString(16)
+    ).join('')
+  );
+}
+
