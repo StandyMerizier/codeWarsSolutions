@@ -25,3 +25,6 @@
 function centuryFromYear(year) {
     return Math.ceil(year/100)
 }
+
+//optimization
+centuryFromYear = y => y / 100 + .99 | 0
