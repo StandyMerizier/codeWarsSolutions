@@ -17,3 +17,7 @@ function isDivisible(n, x, y) {
 function isDivisible(n, x, y) {
   return !(n%x||n%y)
 }
+
+
+//another solution
+const isDivisible = (n, x, y) => n%x==0 && n%y==0;
