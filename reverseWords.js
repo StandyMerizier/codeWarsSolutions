@@ -8,3 +8,6 @@
 //solution
 let reverseWords = str => str.split(" ").map( a => a.split("").reverse().join("")).join(" ");
 
+
+//another solution
+var reverseWords=s=>s.replace(/\S+/g,v=>[...v].reverse().join``)
