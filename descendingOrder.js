@@ -12,3 +12,9 @@
 function descendingOrder(n){
   return Number(n.toString().split('').sort().reverse('').join(''))
 }
+
+
+//another solution
+function descendingOrder(n){
+  return +(n + '').split('').sort(function(a,b){ return b - a }).join('');
+}
