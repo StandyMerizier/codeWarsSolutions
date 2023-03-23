@@ -12,10 +12,11 @@ function sumTwoSmallestNumbers(numbers) {
 }
 
 
-//other solutions
+//other solution
 const sumTwoSmallestNumbers = numbers => numbers.sort((x, y) => x - y).slice(0, 2).reduce((x, y) => x + y);
 
 
+//other solution
 function sumTwoSmallestNumbers(numbers) {  
   var [ a, b ] = numbers.sort((a, b) => a - b)
   return a + b
