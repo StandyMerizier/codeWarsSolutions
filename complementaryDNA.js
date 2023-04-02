@@ -37,3 +37,4 @@ DNAStrand.pairs = {
   C: 'G',
   G: 'C',
 }
+
