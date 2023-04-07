@@ -17,3 +17,7 @@ function array_diff(a, b) {
 //another solution
 array_diff = require("lodash").difference;
 
+
+function array_diff(a, b) {
+  return a.filter(function(x) { return b.indexOf(x) == -1; });
+}
