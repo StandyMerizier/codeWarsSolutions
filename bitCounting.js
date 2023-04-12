@@ -18,3 +18,4 @@ var countBits = function(n) {
 
 //another solution
 countBits = n => n.toString(2).split('0').join('').length;
+
