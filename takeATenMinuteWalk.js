@@ -32,3 +32,4 @@ function isValidWalk(walk) {
   }
   return walk.length==10 && count('n')==count('s') && count('w')==count('e');
 }
+
